@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <!-- start Bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> 
+    <!-- end Bootstrap stylesheet -->
+
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <title>Movit Sport Demo</title>
+  </head>
+
+  <body data-spy="scroll" data-target="#navbar" data-offset="0"> <!-- with Bootstrap Scrollspy -->
+    <div id="wrapper" align="center">  
+      <div id="navbar">
+        <nav class="navbar navbar-light bg-light fixed-top justify-content-center">
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a #id="book-now-button" class="nav-link active" href="#query-box">Book now</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#result-box">Results</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-box">About</a>
+            </li>
+          </ul>
+        </nav>
+      </div> 
+      <!-- end navbar  -->  
+
+      <div id="query-box" class="content-box">
+        <form action="#" method="post" class="search-form form-group">
+          <div id="enter-location-textfield-container" class="form-group">
+            <input id="enter-location-textfield" type="text" placeholder="Rotterdam">
+          </div>
+          <div id="choose-sport-radio-container" class="btn-group btn-group-toggle form-group">
+            <label class="btn btn-secondary"> 
+              <input class="choose-sport-radio-option" type="radio" name="choose-sport" value="tennis"> Tennis
+            </label>
+            <label class="btn btn-secondary">
+              <input class="choose-sport-radio-option" type="radio" name="choose-sport" value="squash"> Squash
+            </label>
+            <label class="btn btn-secondary">
+              <input class="choose-sport-radio-option" type="radio" name="choose-sport" value="other"> Other
+            </label>
+          </div>
+          <div id="choose-date-datepicker-container" class="form-group">
+            <input id="choose-date-datepicker" type="date" name="choose-date" value="2019-01-15">
+          </div>
+          <button type="button" onclick="showResult()" id="search-form-submit" class="btn btn-primary">Search</button>
+        </form>
+      </div>
+      <!-- end #query-box -->
+
+      <div id="result-box" class="content-box" style="display: none;">
+        <div id="result1" class="result">
+          <img id="img-result1" class="img-result" src="images/blijdorp-small.jpg">
+          <div id="text-result1" class="text-result">
+            <span class="facility-description">
+              <p><b>Blijdorp tennis club</b><br>
+              1 Hour <br>
+              From €15</p>
+            </span>
+          </div>
+        </div>
+        <div id="result2" class="result">
+          <img id="img-result2" class="img-result" src="images/barendrecht-small.jpg">
+          <div id="text-result2" class="text-result">
+            <span class="facility-description">
+              <p><b>Squash Barendrecht</b><br>
+              45 minutes <br>
+              From €18</p>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- end #result-box -->
+
+      <div id="about-box" class="content-box">
+        <h3>About me</h3>
+        <img class="img-about" src="images/photo-harro.jpg">
+        <p>In the summer of 2015 I was in Barcelona and I felt like playing tennis. This turned out to be really difficult to arrange. I thought: “You have Booking.com for hotels. But why is there no Booking.com for sport locations?” The idea would not let me go, so in the fall of 2016 I co-founded <a href="https://movitsport.com" target="_blank">Movit Sport</a>. During my startup journey I learned the hard way that I needed technical skills that I didn’t have.</p> <p>I hope I’ll be able to apply the knowledge and skills I acquired at the Web Development Bootcamp to build with my co-founder a gorgeous version 3.0 of our platform that will allow us to scale. This is a first prototype that hopefully will get us closer to that goal.</p>
+
+      </div>
+      <!-- end #about-box -->
+
+      <div id="footer-box" class="content-box">
+        <h3> Footer </h3>
+        <p> Made with love by Harro Boven as a final project 
+        for the Web Development Bootcamp of
+        Turing Society Rotterdam :)</p>
+      </div>
+      <!-- end #footer-box -->
+    </div>
+  <!-- start Bootstrap scripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <!-- end Bootstrap scripts -->
+
+  <script src="scripts/main.js"></script>
+
+  </body>
+</html>

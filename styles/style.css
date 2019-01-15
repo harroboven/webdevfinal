@@ -1,0 +1,35 @@
+body {
+	padding-top: 70px; /*preventing the navbar overflowing the content*/
+} 
+
+#query-box {
+	padding-top: 70px; /*making the #book-now-button return to the same place as on pageload*/
+	margin-top: -70px; /*same*/
+}
+
+.img-result,.img-about {
+	height: 250px;
+	width: 250px;
+}
+
+.result {
+	max-width: 450px;
+	display: inline-block;
+	margin: 0 25px;
+}
+
+.content-box {
+	padding-left: 45px; 
+	padding-right: 45px;
+	margin-top: 20px;
+}
+
+.img-about {
+	margin: 50px 0;
+}
+
+#footer-box {
+	background-color: #6c757d;
+	color: white;
+	padding-bottom: 5px;
+}
